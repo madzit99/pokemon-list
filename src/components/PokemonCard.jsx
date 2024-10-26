@@ -8,12 +8,12 @@ const PokemonCard = ({ name, url }) => {
       try {
         const response = await fetch(url);
         if (!response.ok) {
-          return console.log("Сетевая ошибка!");
+          return console.log("Сетевая ошибка!") 
         }
         const data = await response.json();
         setPokemonData(data);
       } catch (error) {
-        return console.log("Ошибка при получении данных:", error);
+       return console.log(`Ошибка при получении данных: ${error}`);
       }
     };
     fetchData();
