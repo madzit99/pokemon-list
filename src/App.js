@@ -1,10 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
+import PokemonList from "./components/PokemonList";
 
-function App() {
-  return <div className="App">
-    
-  </div>;
+const App = () => {
+  return (
+    <>
+      <div className="App">
+        <h1>Список покемонов</h1>
+        <PokemonList/>
+        </div>;
+    </>
+  );
 }
 
 export default App;
